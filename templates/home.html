@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+  <center>
+    <h1>Lp Demo App - Homepage</h1>
+    <h3>Your name is {{ name }}.</h3>
+    <h4>{{s}}</h4>
+
+<!-- <a  href= "{{ url_for('login') }}" >Login</a>
+<br>
+<a href= "{{ url_for('logout') }}" >Logout</a> -->
+
+{% if name != None  %}
+<a href= "{{ url_for('logout') }}" >Logout</a>
+{% else %}
+<a  href= "{{ url_for('login') }}" >Login</a>
+{% endif %}
+
+  </center>
+</body>
+
+</html>
