@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, session, redirect, url_for
 import functools
-from flask_login import LoginManager
+
 
 
 
@@ -74,6 +74,6 @@ def profile_page():
     return render_template("profile.html", name=session["username"])
 
 
-if __name__ == "__main__":
-    # db.create_all()
-    app.run(debug=True)
+# if __name__ == "__main__":
+    # # db.create_all()
+    # app.run(debug=True)
